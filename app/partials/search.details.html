@@ -1,0 +1,24 @@
+<!-- partials/search.details.html-->
+
+<!-- Movie Details -->
+<div class=" animated zoomIn">
+	<!-- Display Movie Poster-->
+	<div class="col-md-5 col-lg-4">
+		 <!-- Displays a "No Picture" image if we aren't able to pull a poster from the OMDB API -->
+		<object class="resize" data="{{vmDetails.movieDetails.Poster}}" type="image/png">
+			<img class="resize" src="/app/img/nopicture.gif">
+		</object>
+	</div>
+	<br>
+	<!-- Display Movie Info -->
+	<div class="col-md-7 col-lg-8">
+		<p class="h4"><b><a href="http://imdb.com/title/{{vmDetails.movieDetails.imdbID}}">{{vmDetails.movieDetails.Title}}</a></b>, {{vmDetails.movieDetails.Year}}</p>
+		<p><b>Released on:</b> {{vmDetails.movieDetails.Released}} ({{vmDetails.movieDetails.Runtime}})</p>
+		<p>{{vmDetails.movieDetails.Plot}}</p>
+		<p><b>Director:</b> {{vmDetails.movieDetails.Director}}</p>
+		<p><b>Actors:</b> {{vmDetails.movieDetails.Actors}}</p>
+		<p><b>Genre:</b> {{vmDetails.movieDetails.Genre}}</p>
+		<p><b>IMDB Rating: </b> {{vmDetails.movieDetails.imdbRating}}</p>
+		<p><b>Tomato Meter: </b> {{vmDetails.movieDetails.tomatoMeter}}</p>		
+	</div>
+</div>

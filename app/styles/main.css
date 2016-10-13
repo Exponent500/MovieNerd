@@ -1,0 +1,49 @@
+
+.container {
+    padding-top: 35px;
+}
+
+.ng-cloak {
+	display:none;
+}
+
+body {
+	padding-top: 45px;
+	background: lightgray;
+}
+
+.glyphicon-color{
+	background-color: #252525;
+}
+
+.white-color{
+	color:lightgray;
+}
+
+.resize-image {
+	width: 100%;
+	/*height: 600px;*/
+/*	height: 400px;
+	width: 100%;
+	height: 100%*/
+	max-width: 350px;
+/*	min-width: 200px;*/
+}
+
+.panel-height {
+	max-height: 750px;
+}
+
+
+/* media queries */
+@media screen and (min-width: 768px) {
+
+	.resize-image {
+		width: 100%;
+		height: 400px;
+	}
+
+	.panel-height {
+		height: 600px;
+	}
+}
