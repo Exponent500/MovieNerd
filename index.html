@@ -19,20 +19,11 @@
 
     <body> 
         <div class="container">
-          
-            <!-- Top nav -->
-            <nav class="navbar navbar-inverse navbar-fixed-top">
-                <div class="container-fluid">
-                    <div class="navbar-header">
-                        <a class="navbar-brand" href="#"><b>MovieNerd</b></a>
-                    </div>
-                </div>
-            </nav>
-            
-            <!-- anchor point for child views -->
-            <div class="animated zoomInRight" ui-view>
-
-            </div>
+         
+            <!-- Top Nav -->
+            <topnav brand="MovieNerd"></topnav> <!-- passes the brand value to the topnav component template -->
+            <!-- binds initial state here -->
+            <div ui-view></div>
 
         </div>     
 
@@ -49,6 +40,9 @@
         <script src="/app/movies/movie.controller.js"></script>
         <script src="/app/movies/movie.detail.controller.js"></script>
         <script src="/app/movies/movie.factory.js"></script>
+        <script src="/app/movies/moviesearch.component.js"></script>
+        <script src="/app/movies/moviesearchresults.component.js"></script>
+        <script src="/app/navigation/topnav.component.js"></script>
         <!-- endinject -->
     </body>
 </html>
