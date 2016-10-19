@@ -34,3 +34,5 @@ angular
     			});
     	});
 })();
+
+//  code reviewed by John Abanto, Tristan and Jesse

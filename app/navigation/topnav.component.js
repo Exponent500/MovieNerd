@@ -10,3 +10,5 @@
         	templateUrl: 'app/navigation/topnav.component.html'
         });
 })();
+
+// code reviewed by John Abanto, Tristan and Jesse
