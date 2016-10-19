@@ -12,6 +12,8 @@
         var vm = this; 
         vm.movieInfoResults ="";
         vm.getMovieData = getMovieData;
+        // vm.modal = modal;
+
         activate(); 
 
         ////////////
@@ -34,6 +36,6 @@
 			    }
             );
                 
-        }
+        }      
     }
 })();

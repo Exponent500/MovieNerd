@@ -1,7 +1,7 @@
 <!-- moviesearch component template -->
 
 <!-- Movie Search Bar -->
-<form name="myForm" class="col-xs-12 form-group" ng-class="{'has-error has-feedback' : myForm.movieTitle.$touched && myForm.movieTitle.$invalid}">
+<form id="test" name="myForm" class="col-xs-12 form-group" ng-class="{'has-error has-feedback' : myForm.movieTitle.$touched && myForm.movieTitle.$invalid}">
     <div class="input-group search-bar">
         <input class="form-control" type="text" ng-model="$ctrl.movieTitle" name="movieTitle" placeholder="Enter full movie or TV show name" required>
         <span class="input-group-btn">

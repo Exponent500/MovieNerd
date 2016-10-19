@@ -1,17 +1,18 @@
-<!-- moviesearchresults component template -->
-
 <!-- Movie Details -->
-<div class=" animated zoomIn">
-    <!-- Display Movie Poster--> 
-    <div class="col-md-5 col-lg-4">
+
+<!-- Display Movie Poster--> 
+<div class="container-fluid">
+   <br>
+    <div class="col-md-5 col-lg-5">
          <!-- Displays a "No Picture" image if we aren't able to pull a poster from the OMDB API -->
         <object class="resize" data="{{$ctrl.movieDetails.Poster}}" type="image/png">
             <img class="resize" src="/app/img/nopicture.gif">
         </object>
     </div>
     <br>
+
     <!-- Display Movie Info -->
-    <div class="col-md-7 col-lg-8">
+    <div class="col-md-7 col-lg-7">
         <p class="h4"><b><a href="http://imdb.com/title/{{$ctrl.movieDetails.imdbID}}">{{$ctrl.movieDetails.Title}}</a></b>, {{$ctrl.movieDetails.Year}}</p>
         <p><b>Released on:</b> {{$ctrl.movieDetails.Released}} ({{$ctrl.movieDetails.Runtime}})</p>
         <p>{{$ctrl.movieDetails.Plot}}</p>
